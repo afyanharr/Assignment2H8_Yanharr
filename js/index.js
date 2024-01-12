@@ -8,8 +8,7 @@ submit.addEventListener("click", () => {
     let valyears = document.getElementById("exampleInputYearsE").value;
     let valemail = document.getElementById("exampleInputEmail").value;
     document.querySelector('form').addEventListener('submit', function(event) { 
-        event.preventDefault(); // Prevents the form from submitting and the page from reloading 
-        // Your custom logic here 
+        event.preventDefault();  
         document.getElementById("nama-section1").innerHTML = valname;
         document.getElementById("role-section1").innerHTML = valrole;
         document.getElementById("availability-section1").innerHTML = valava;
