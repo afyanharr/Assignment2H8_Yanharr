@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" style="margin-left: auto;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRODUCT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GALERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">INVENTORY</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid bg-light p-5">
+        <div class="container bg-body mb-5">
+            <div class="row">
+                <div class="col-md-2 d-flex justify-content-center">
+                    <img src="assets\4511668-modified (1).png" class="img-fluid rounded-circle" alt="Hitler" width="100%">
+                </div>
+                <div class="col-md-4">
+                    <div class="row pt-4">
+                        <div class="row">
+                            <h2 id="nama-section1">Yanharr</h2>
+                            <p id="role-section1">Front End Designer</p>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <button type="button" class="btn me-3" id="kontak">Kontak</button>  
+                        <button type="button" class="btn" id="portofolio" style="border-color: green; color: green; border-radius: 0;">Portofolio</button>
+                    </div>
+                </div>
+                <div class="col-md-6 pt-2 pb-2">
+                    <div class="row mb-0">
+                        <div class="col-6 mb-0 fw-bold">
+                            <p class="mb-0 p-0">Availability</p>
+                        </div>
+                        <div class="col-6 mb-0">
+                            <p id="availability-section1">Fulltime</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-0 fw-bold">
+                            <p>Usia</p>
+                        </div>
+                        <div class="col-6 mb-0">
+                            <p id="usia-section1">22</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-0 fw-bold">
+                            <p>Lokasi</p>
+                        </div>
+                        <div class="col-6 mb-0">
+                            <p id="lokasi-section1">Jakarta</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-0 fw-bold">
+                            <p>Pengalaman</p>
+                        </div>
+                        <div class="col-6 mb-0">
+                            <p id="yoe-section1">2Tahun</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-0 fw-bold">
+                            <p>Email</p>
+                        </div>
+                        <div class="col-6 mb-0">
+                            <p id="email-section1">email@gmail.com</p>
+                        </div>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    
+        <div class="container bg-body pt-2" id="form">
+            <div class="row">
+                <form>
+                    <div class="form-group mb-2">
+                        <label for="name">Nama</label>
+                        <input type="text" name="name" class="form-control" id="exampleInputNama" placeholder="Enter name" placeholder="masukkan nama anda" required>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="role">Role</label>
+                        <input type="text" name="role" class="form-control" id="exampleInputRole" required>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="availability">Availability</label>
+                        <input type="text" name="availability" class="form-control" id="exampleInputAvailability" required>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="usia">Usia</label>
+                        <input type="number" name="usia" class="form-control" id="exampleInputUsia" required>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="exampleInputLokasi">Lokasi</label>
+                        <input type="text" name="lokasi" class="form-control" id="exampleInputLokasi" required>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="years">Years Experience</label>
+                        <input type="text" name="years" class="form-control" id="exampleInputYearsE" required>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail" required>
+                    </div>
+                    <div class="mt-2 d-grid gap-2">
+                        <button type="submit" class="btn btn-success mb-2 btn-block" id="submit">Submit</button>
+                    </div>
+                </form>      
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
